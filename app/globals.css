@@ -1,0 +1,184 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+@import "./scrollbar.css";
+
+:root,
+.dark {
+  --background: #09090b;
+  --foreground: #fafafa;
+  --card: #111113;
+  --card-foreground: #fafafa;
+  --border: rgba(255,255,255,0.08);
+  --muted: #27272a;
+  --muted-foreground: #a1a1aa;
+  --glass-bg: rgba(255, 255, 255, 0.03);
+  --glass-bg-hover: rgba(255, 255, 255, 0.06);
+  --glass-border: rgba(255, 255, 255, 0.08);
+  --glass-border-hover: rgba(255, 255, 255, 0.15);
+  --grid-line: rgba(255, 255, 255, 0.025);
+  --noise-opacity: 0.04;
+  --selection-bg: rgba(37, 99, 235, 0.3);
+  --selection-fg: #ffffff;
+}
+
+.light {
+  --background: #ffffff;
+  --foreground: #09090b;
+  --card: #ffffff;
+  --card-foreground: #09090b;
+  --border: rgba(9,9,11,0.08);
+  --muted: #f4f4f5;
+  --muted-foreground: #52525b;
+  --glass-bg: rgba(9, 9, 11, 0.02);
+  --glass-bg-hover: rgba(9, 9, 11, 0.045);
+  --glass-border: rgba(9, 9, 11, 0.08);
+  --glass-border-hover: rgba(9, 9, 11, 0.14);
+  --grid-line: rgba(9, 9, 11, 0.035);
+  --noise-opacity: 0.025;
+  --selection-bg: rgba(37, 99, 235, 0.18);
+  --selection-fg: #09090b;
+}
+
+/* Smooth, non-jarring theme switch. Scoped to elements that don't already define
+   their own transition (those keep their existing timing untouched via .theme-fade,
+   applied per-component alongside the light/dark class pairs). */
+.theme-fade {
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-timing-function: ease;
+  transition-duration: 350ms;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .theme-fade {
+    transition-duration: 0.01ms;
+  }
+}
+
+
+
+html {
+  scroll-behavior: smooth;
+  scrollbar-gutter: stable;
+  width: 100%;
+  min-height: 100%;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
+  transition: background-color 350ms ease, color 350ms ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Selection */
+::selection { background: var(--selection-bg); color: var(--selection-fg); }
+
+/* Focus */
+:focus-visible { outline: 2px solid #2563EB; outline-offset: 2px; }
+
+/* Gradient text utility */
+.text-gradient {
+  background: linear-gradient(135deg, #2563EB, #7C3AED, #06B6D4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-gradient-blue {
+  background: linear-gradient(135deg, #60a5fa, #2563EB);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Glass card */
+.glass {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  backdrop-filter: blur(12px);
+  transition: background-color 350ms ease, border-color 350ms ease;
+}
+
+.glass-hover {
+  transition: all 0.3s ease;
+}
+
+.glass-hover:hover {
+  background: var(--glass-bg-hover);
+  border-color: var(--glass-border-hover);
+  transform: translateY(-2px);
+}
+
+/* Grid background */
+.bg-grid {
+  background-image: linear-gradient(var(--grid-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
+  background-size: 60px 60px;
+  transition: background-image 350ms ease;
+}
+
+/* Glow effects */
+.glow-blue { box-shadow: 0 0 40px rgba(37, 99, 235, 0.3); }
+.glow-violet { box-shadow: 0 0 40px rgba(124, 58, 237, 0.3); }
+.glow-cyan { box-shadow: 0 0 40px rgba(6, 182, 212, 0.3); }
+
+/* Noise texture */
+.noise::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+  pointer-events: none;
+  opacity: var(--noise-opacity);
+  transition: opacity 350ms ease;
+}
+
+/* Marquee */
+.marquee-wrapper { overflow: hidden; }
+.marquee-inner { display: flex; animation: marquee 30s linear infinite; white-space: nowrap; }
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Section padding */
+.section-padding { padding: 80px 0; }
+@media (min-width: 768px) { .section-padding { padding: 120px 0; } }
+
+/* Container */
+.container-custom {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Hide scrollbar for tech stack */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
