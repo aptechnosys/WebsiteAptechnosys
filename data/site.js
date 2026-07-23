@@ -1,3 +1,26 @@
+import { FaAws } from "react-icons/fa";
+import {
+  SiNextdotjs,
+  SiReact,
+  SiJavascript,
+  SiTailwindcss,
+  SiFramer,
+  SiFlutter,
+  SiSwift,
+  SiNodedotjs,
+  SiExpress,
+  SiLaravel,
+  SiDart,
+  SiMongodb,
+  SiPostgresql,
+  SiMysql,
+  SiSupabase,
+  SiRedis,
+  SiVercel,
+  SiDocker,
+  SiRender,
+  SiGraphql,
+} from "react-icons/si";
 export const stats = [
   { value: 50, suffix: "+", label: "Projects Delivered" },
   { value: 35, suffix: "+", label: "Happy Clients" },
@@ -280,29 +303,38 @@ bgPattern: "bg-fuchsia-950",
 ]
 
 export const techStack = {
-  Frontend: [
-    { name: "Next.js", icon: "▲" },
-    { name: "React", icon: "⚛" },
-    { name: "JavaScript", icon: "JS" },
-    { name: "Tailwind CSS", icon: "🎨" },
-    { name: "Framer Motion", icon: "✦" },
-  ],
+ Frontend: [
+  { name: "Next.js", icon: SiNextdotjs },
+  { name: "React", icon: SiReact },
+  { name: "JavaScript", icon: SiJavascript },
+  { name: "Tailwind CSS", icon: SiTailwindcss },
+  { name: "Framer Motion", icon: SiFramer },
+  { name: "Flutter", icon: SiFlutter },
+  { name: "Swift", icon: SiSwift },
+],
   Backend: [
-    { name: "Node.js", icon: "⬡" },
-    { name: "Express", icon: "Ex" },
+    { name: "Node.js", icon: SiNodedotjs },
+    { name: "Express", icon: SiExpress },
+    { name: "Laravel", icon: SiLaravel },
+    { name: "Dart", icon: SiDart },
     { name: "REST APIs", icon: "🔌" },
-    { name: "GraphQL", icon: "◈" },
+    { name: "GraphQL", icon: SiGraphql },
   ],
-  Database: [
-    { name: "MongoDB", icon: "🍃" },
-    { name: "PostgreSQL", icon: "🐘" },
-    { name: "Redis", icon: "⚡" },
+ 
+   Database: [
+    { name: "MongoDB", icon: SiMongodb },
+    { name: "PostgreSQL", icon: SiPostgresql },
+    { name: "MySQL", icon: SiMysql },
+    { name: "Supabase", icon: SiSupabase },
+    { name: "Redis", icon: SiRedis },
   ],
+
   Cloud: [
-    { name: "AWS", icon: "☁" },
-    { name: "Vercel", icon: "▲" },
+    { name: "AWS", icon: FaAws },
+    { name: "Vercel", icon: SiVercel },
     { name: "Railway", icon: "🚂" },
-    { name: "Docker", icon: "🐳" },
+    { name: "Render", icon: SiRender },
+    { name: "Docker", icon: SiDocker },
   ],
 }
 

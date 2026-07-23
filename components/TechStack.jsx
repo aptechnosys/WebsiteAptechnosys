@@ -30,8 +30,12 @@ export default function TechStack() {
               <div className="space-y-3">
                 {techs.map((tech) => (
                   <div key={tech.name} className="flex items-center gap-3 group">
-                    <div className="w-8 h-8 rounded-lg bg-zinc-900/5 dark:bg-white/5 border border-zinc-900/[0.08] dark:border-white/[0.08] flex items-center justify-center text-xs font-mono text-zinc-600 dark:text-zinc-400 group-hover:border-zinc-900/20 dark:group-hover:border-white/20 group-hover:bg-zinc-900/10 dark:group-hover:bg-white/10 transition-all duration-200 flex-shrink-0">
-                      {tech.icon}
+                    <div className="w-8 h-8 rounded-lg bg-zinc-900/5 dark:bg-white/5 border border-zinc-900/[0.08] dark:border-white/[0.08] flex items-center justify-center text-xs text-zinc-600 dark:text-zinc-400 group-hover:border-zinc-900/20 dark:group-hover:border-white/20 group-hover:bg-zinc-900/10 dark:group-hover:bg-white/10 transition-all duration-200 flex-shrink-0">
+                      {typeof tech.icon === "function" ? (
+                        <tech.icon className="w-5 h-5" />
+                      ) : (
+                        tech.icon
+                      )}
                     </div>
                     <span className="text-zinc-700 dark:text-zinc-300 text-sm font-medium group-hover:text-zinc-900 dark:group-hover:text-white transition-colors">
                       {tech.name}
