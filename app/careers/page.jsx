@@ -9,13 +9,24 @@ import {
   Mail,
   ArrowRight,
   CheckCircle2,
+  ArrowLeft,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function CareersPage() {
   return (
     <section className="section-padding bg-white dark:bg-[#09090b]">
       <div className="container-custom">
-
+         {/* arrow button */}
+         <div className="container-custom pt-8">
+            <Link
+              href="/"
+              className="inline-flex items-center gap-2 text-zinc-600 dark:text-zinc-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+            >
+              <ArrowLeft className="w-5 h-5" />
+              <span>Back to Home</span>
+            </Link>
+          </div>
         {/* Hero */}
 
         <div className="text-center max-w-3xl mx-auto mb-20">
