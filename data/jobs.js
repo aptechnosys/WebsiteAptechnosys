@@ -7,7 +7,7 @@ export const jobs = [
     workMode: "On Site",
     employmentType: "Full Time",
     experience: "1+ Years",
-    openings: 2,
+    openings: 1,
     salary: "Competitive Salary",
 
     status: "Open",
