@@ -18,13 +18,13 @@ export default function CareersPage() {
     <section className="section-padding bg-white dark:bg-[#09090b]">
       <div className="container-custom">
          {/* arrow button */}
-         <div className="container-custom pt-8">
+         <div className="container-custom pt-19 sm:pt-28">
             <Link
               href="/"
               className="inline-flex items-center gap-2 text-zinc-600 dark:text-zinc-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
             >
               <ArrowLeft className="w-5 h-5" />
-              <span>Back to Home</span>
+              <span>Back</span>
             </Link>
           </div>
         {/* Hero */}
