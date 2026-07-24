@@ -1,15 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "standalone",
+  reactStrictMode: true,
 
   images: {
     formats: ["image/avif", "image/webp"],
-    remotePatterns: [],
   },
 
   compress: true,
   poweredByHeader: false,
-  reactStrictMode: true,
-}
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
