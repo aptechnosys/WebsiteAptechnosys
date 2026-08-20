@@ -140,4 +140,85 @@ export const jobs = [
 
     applyEmail: "support@aptechnosys.com",
   },
+
+  {
+  id: 3,
+  title: "Graphic Designer",
+  department: "Design & Creative",
+  location: "Mira Road East, Thane",
+  workMode: "On Site",
+  employmentType: "Full Time",
+  experience: "1+ Years",
+  openings: 1,
+  salary: "Competitive Salary",
+
+  status: "Open",
+
+  description:
+    "We are looking for a creative and detail-oriented Graphic Designer with 1+ years of experience to join our team. You will be responsible for creating engaging visual content for websites, social media, marketing campaigns, branding, and other digital platforms while maintaining a consistent brand identity.",
+
+  skills: [
+    "Adobe Photoshop",
+    "Adobe Illustrator",
+    "Canva",
+    "Figma",
+    "Social Media Creatives",
+    "Branding & Visual Identity",
+    "Typography",
+    "Color Theory",
+    "Layout Design",
+    "Image Editing & Retouching",
+  ],
+
+  responsibilities: [
+    "Design creative and engaging graphics for social media platforms, websites, and digital marketing campaigns.",
+    "Create banners, posters, brochures, advertisements, presentations, and other marketing materials.",
+    "Develop social media posts, stories, thumbnails, and promotional creatives.",
+    "Create and maintain consistent visual branding across different platforms.",
+    "Collaborate with marketing and development teams to understand design requirements.",
+    "Convert ideas and concepts into visually appealing designs.",
+    "Edit, retouch, and optimize images for web and social media use.",
+    "Create website graphics, icons, illustrations, and UI-related visual assets when required.",
+    "Handle multiple design requirements while meeting project deadlines.",
+    "Stay updated with current graphic design trends, tools, and creative techniques.",
+  ],
+
+  qualifications: [
+    "1+ years of professional Graphic Design experience.",
+    "Strong knowledge of Adobe Photoshop and Adobe Illustrator.",
+    "Experience creating social media and digital marketing creatives.",
+    "Good understanding of typography, color theory, composition, and visual hierarchy.",
+    "Basic knowledge of Figma and UI design is preferred.",
+    "Ability to understand design briefs and translate them into creative visuals.",
+    "Strong attention to detail and creativity.",
+    "Ability to manage multiple projects and meet deadlines.",
+    "Good communication and teamwork skills.",
+    "A strong portfolio showcasing previous graphic design work is required.",
+  ],
+
+  preferredSkills: [
+    "Figma",
+    "Adobe After Effects",
+    "Adobe Premiere Pro",
+    "Motion Graphics",
+    "Video Editing",
+    "Logo Design",
+    "Brand Identity Design",
+    "UI/UX Design",
+    "Basic Animation",
+    "AI-assisted Design Tools",
+  ],
+
+  benefits: [
+    "Competitive salary based on skills and experience",
+    "Opportunity to work on live client and in-house projects",
+    "Exposure to branding, web, social media, and marketing projects",
+    "Opportunity to build a diverse professional portfolio",
+    "Career growth and learning opportunities",
+    "Friendly and collaborative work environment",
+    "Performance-based appraisals and incentives",
+  ],
+
+  applyEmail: "support@aptechnosys.com",
+},
 ];
