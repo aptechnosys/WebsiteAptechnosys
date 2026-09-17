@@ -23,7 +23,7 @@ export const aboutData = {
     role: "Owner & Founder",
 
     description:
-      "Ashish Palaskar is the Owner & Co-Founder of APTechnosys, helping lead the company's technology, business and delivery direction.",
+      "Ashish Palaskar is the Owner & Founder of APTechnosys, helping lead the company's technology, business and delivery direction.",
 
     image: "/images/founder.jpeg",
   },
