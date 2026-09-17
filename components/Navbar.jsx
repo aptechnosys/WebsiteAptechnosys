@@ -1,18 +1,18 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { Menu, X, Code2 } from "lucide-react"
+import { Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import ThemeToggle from "@/components/ThemeToggle"
 import Link from "next/link"
 
 const navLinks = [
-  { label: "Services", href: "#services" },
-  { label: "Projects", href: "#projects" },
-  { label: "Process", href: "#process" },
-  { label: "About Us", href: "#tech" },
+  { label: "Services", href: "/#services" },
+  { label: "Projects", href: "/#projects" },
+  { label: "Process", href: "/#process" },
+  { label: "About Us", href: "/about" },
   { label: "Careers", href: "/careers" },
-  { label: "FAQ", href: "#faq" },
+  { label: "FAQ", href: "/#faq" },
 ]
 
 // Small SVG icon for the "View Work" button
@@ -28,7 +28,15 @@ const SparkleIcon = () => (
 )
 
 const ArrowRightIcon = () => (
-  <svg className="w-4 h-4 ml-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+  <svg
+    className="w-4 h-4 ml-1"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
     <line x1="5" y1="12" x2="19" y2="12" />
     <polyline points="12 5 19 12 12 19" />
   </svg>
@@ -60,62 +68,65 @@ export default function Navbar() {
             }`}
           >
             <nav className="flex items-center justify-between h-16 md:h-20 px-4 sm:px-5 lg:px-6">
-              
+
               {/* Logo */}
-              <a href="/" className="flex items-center gap-2">
-              <img
-                src="/logo.jpg"
-                alt="ApTechnosys Logo"
-                className="h-11 w-11 rounded-full object-contain"
-              />
+              <Link href="/" className="flex items-center gap-2">
+                <img
+                  src="/logo.jpg"
+                  alt="ApTechnosys Logo"
+                  className="h-11 w-11 rounded-full object-contain"
+                />
 
                 <span className="text-lg font-semibold text-zinc-900 dark:text-white">
                   AP<span className="text-blue-500">Technosys</span>
                 </span>
-              </a>
+              </Link>
 
               {/* Desktop Menu */}
               <div className="hidden md:flex items-center gap-1">
                 {navLinks.map((link) => (
-                  <a
+                  <Link
                     key={link.label}
                     href={link.href}
                     className="px-4 py-2 text-sm text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white rounded-lg hover:bg-zinc-900/5 dark:hover:bg-white/5 transition"
                   >
                     {link.label}
-                  </a>
+                  </Link>
                 ))}
               </div>
 
               {/* Desktop CTA */}
               <div className="hidden md:flex items-center gap-2">
                 <ThemeToggle />
+
                 <Button variant="ghost" asChild>
-                  <a href="#projects">
+                  <Link href="/#projects">
                     <SparkleIcon />
                     View Work
-                  </a>
+                  </Link>
                 </Button>
 
                 <Button
                   className="bg-blue-600 hover:bg-blue-700 text-white"
                   asChild
                 >
-                  <a href="#contact">
+                  <Link href="/#contact">
                     Get in Touch
                     <ArrowRightIcon />
-                  </a>
+                  </Link>
                 </Button>
               </div>
 
               {/* Mobile Controls */}
               <div className="md:hidden flex items-center gap-2">
                 <ThemeToggle />
+
                 <button
                   type="button"
                   className="flex h-11 w-11 items-center justify-center rounded-xl border border-zinc-900/10 dark:border-white/10 text-zinc-600 dark:text-zinc-400 hover:bg-zinc-900/5 dark:hover:bg-white/5 hover:text-zinc-900 dark:hover:text-white"
                   onClick={() => setMobileOpen(!mobileOpen)}
                   aria-label="Toggle menu"
+                  aria-expanded={mobileOpen}
                 >
                   {mobileOpen ? <X size={20} /> : <Menu size={20} />}
                 </button>
@@ -128,32 +139,46 @@ export default function Navbar() {
       {/* Mobile Menu */}
       {mobileOpen && (
         <div className="fixed left-3 right-3 top-20 z-40 rounded-2xl border border-zinc-900/[0.08] dark:border-white/[0.08] bg-white dark:bg-[#09090b] p-6 shadow-xl md:hidden">
+
           <div className="flex flex-col gap-2 mb-6">
             {navLinks.map((link) => (
-              <a
+              <Link
                 key={link.label}
                 href={link.href}
                 onClick={() => setMobileOpen(false)}
                 className="px-4 py-3 text-zinc-700 dark:text-zinc-300 hover:text-zinc-900 dark:hover:text-white hover:bg-zinc-900/5 dark:hover:bg-white/5 rounded-lg"
               >
                 {link.label}
-              </a>
+              </Link>
             ))}
           </div>
 
           <div className="flex flex-col gap-3">
-            <Button variant="outline" className="w-full" asChild>
-              <a href="#projects" onClick={() => setMobileOpen(false)}>
+            <Button
+              variant="outline"
+              className="w-full"
+              asChild
+            >
+              <Link
+                href="/#projects"
+                onClick={() => setMobileOpen(false)}
+              >
                 <SparkleIcon />
                 View Work
-              </a>
+              </Link>
             </Button>
 
-            <Button className="w-full bg-blue-600" asChild>
-              <a href="#contact" onClick={() => setMobileOpen(false)}>
+            <Button
+              className="w-full bg-blue-600"
+              asChild
+            >
+              <Link
+                href="/#contact"
+                onClick={() => setMobileOpen(false)}
+              >
                 Get in Touch
                 <ArrowRightIcon />
-              </a>
+              </Link>
             </Button>
           </div>
         </div>
