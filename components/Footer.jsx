@@ -188,8 +188,8 @@ export default function Footer() {
             © {new Date().getFullYear()} Aptechnosys. All rights reserved.
           </p>
 
-          <p className="text-zinc-700 text-xs">
-            Built with Next.js · Hosted on Vercel
+         <p className="text-zinc-600 dark:text-zinc-400 text-sm">
+            Built with ❤️ Next.js
           </p>
 
         </div>
