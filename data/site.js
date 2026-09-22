@@ -53,9 +53,9 @@ export const stats = [
 /* -------------------------------------------------------------------------- */
 /*                                  SERVICES                                  */
 /* -------------------------------------------------------------------------- */
-
 export const services = [
   {
+    slug: "web-development",
     icon: "Globe",
     title: "Web Development",
     description:
@@ -65,6 +65,7 @@ export const services = [
   },
 
   {
+    slug: "custom-software-development",
     icon: "Code2",
     title: "Custom Software Development",
     description:
@@ -74,15 +75,17 @@ export const services = [
   },
 
   {
+    slug: "mobile-app-development",
     icon: "Smartphone",
     title: "Mobile App Development",
     description:
-      "Cross-platform and native mobile applications for Android and iOS using modern technologies such as Flutter and React Native.",
+      "Cross-platform and native mobile applications for Android and iOS using Flutter, React Native, and modern backend technologies.",
     gradient: "from-fuchsia-500/20 to-pink-500/20",
     accent: "fuchsia",
   },
 
   {
+    slug: "enterprise-applications",
     icon: "Building2",
     title: "Enterprise Applications",
     description:
@@ -92,6 +95,7 @@ export const services = [
   },
 
   {
+    slug: "dashboard-development",
     icon: "LayoutDashboard",
     title: "Dashboard Development",
     description:
@@ -101,6 +105,7 @@ export const services = [
   },
 
   {
+    slug: "api-development",
     icon: "Zap",
     title: "API Development",
     description:
@@ -110,15 +115,17 @@ export const services = [
   },
 
   {
+    slug: "ui-ux-design",
     icon: "Palette",
     title: "UI/UX Design",
     description:
-      "User-focused interfaces designed from wireframes to polished Figma concepts, with responsive layouts and clear user journeys.",
+      "User-focused interfaces designed from wireframes and prototypes to responsive, production-ready experiences.",
     gradient: "from-pink-500/20 to-rose-500/20",
     accent: "pink",
   },
 
   {
+    slug: "maintenance-support",
     icon: "Shield",
     title: "Maintenance & Support",
     description:
@@ -126,7 +133,7 @@ export const services = [
     gradient: "from-emerald-500/20 to-green-500/20",
     accent: "emerald",
   },
-];
+]
 
 /* -------------------------------------------------------------------------- */
 /*                                  PROJECTS                                  */

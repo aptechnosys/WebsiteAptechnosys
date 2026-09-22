@@ -12,6 +12,9 @@ out/
 .env.test.local
 .env.production.local
 
+# Project memory / private notes
+memory.md
+
 # Logs
 npm-debug.log*
 yarn-debug.log*
