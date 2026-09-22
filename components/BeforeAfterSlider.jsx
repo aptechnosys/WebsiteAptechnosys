@@ -19,8 +19,9 @@ export default function BeforeAfterSlider({
         className="
           relative
           mx-auto
+          box-border
 
-          w-[92vw]
+          w-full
           max-w-[1400px]
 
           aspect-video
