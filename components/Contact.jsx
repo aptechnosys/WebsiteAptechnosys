@@ -7,7 +7,7 @@ import { reveal } from "@/components/motionPresets"
 
 const projectTypes = [
   "Web Development",
-  "Custom Software",
+  "Custom Software Development",
   "Dashboard",
   "Enterprise App",
   "UI/UX Design",

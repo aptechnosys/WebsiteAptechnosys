@@ -8,7 +8,7 @@ export const metadata = {
   metadataBase: new URL("https://www.aptechnosys.com"),
 
   title: {
-    default: "Aptechnosys | Custom Software & Web Development Company",
+    default: "Aptechnosys | Custom Software Development & Web Development Company",
     template: "%s | Aptechnosys",
   },
 
@@ -53,17 +53,17 @@ export const metadata = {
     url: "https://www.aptechnosys.com",
     siteName: "Aptechnosys",
 
-    title: "Aptechnosys | Custom Software & Web Development Company",
+    title: "Aptechnosys | Custom Software Development & Web Development Company",
 
     description:
-      "Custom software, web applications, mobile apps, enterprise solutions, dashboards, and digital services by Aptechnosys.",
+      "Custom software Development, web applications, mobile apps, enterprise solutions, dashboards, and digital services by Aptechnosys.",
 
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Aptechnosys - Custom Software & Digital Solutions",
+        alt: "Aptechnosys - Custom Software Development & Digital Solutions",
       },
     ],
   },
@@ -71,10 +71,10 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
 
-    title: "Aptechnosys | Custom Software & Web Development",
+    title: "Aptechnosys | Custom Software Development & Web Development",
 
     description:
-      "Custom software, web applications, mobile apps, enterprise solutions, and digital products.",
+      "Custom software Development, web applications, mobile apps, enterprise solutions, and digital products.",
 
     images: ["/og-image.png"],
   },

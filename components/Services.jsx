@@ -1,10 +1,10 @@
 "use client"
 import { motion } from "framer-motion"
-import { Globe, Code2, LayoutDashboard, Building2, Palette, Zap, Shield, Search } from "lucide-react"
+import { Globe, Code2, LayoutDashboard, Building2, Palette, Zap, Shield, Search, Smartphone } from "lucide-react"
 import { services } from "@/data/site"
 import { reveal, scale } from "@/components/motionPresets"
 
-const iconMap = { Globe, Code2, LayoutDashboard, Building2, Palette, Zap, Shield, Search }
+const iconMap = { Globe, Code2, LayoutDashboard, Building2, Palette, Zap, Shield, Search, Smartphone }
 
 const accentMap = {
   blue: { gradient: "from-blue-500/20 to-cyan-500/20", border: "hover:border-blue-500/40", dot: "bg-blue-500", text: "text-blue-400", iconBg: "bg-blue-500/15" },

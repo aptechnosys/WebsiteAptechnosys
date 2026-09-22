@@ -13,7 +13,7 @@ import Link from "next/link"
 const footerLinks = {
   Services: [
     { label: "Web Development", href: "/#services" },
-    { label: "Custom Software", href: "/#services" },
+    { label: "Custom Software Development", href: "/#services" },
     { label: "Dashboard Development", href: "/#services" },
     { label: "Enterprise Applications", href: "/#services" },
     { label: "UI/UX Design", href: "/#services" },

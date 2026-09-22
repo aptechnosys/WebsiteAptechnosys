@@ -1,4 +1,5 @@
 import { FaAws } from "react-icons/fa";
+
 import {
   SiNextdotjs,
   SiReact,
@@ -21,71 +22,115 @@ import {
   SiRender,
   SiGraphql,
 } from "react-icons/si";
+
+/* -------------------------------------------------------------------------- */
+/*                                   STATS                                    */
+/* -------------------------------------------------------------------------- */
+
 export const stats = [
-  { value: 50, suffix: "+", label: "Projects Delivered" },
-  { value: 35, suffix: "+", label: "Happy Clients" },
-  { value: 5, suffix: "+", label: "Years Experience" },
-  { value: 20, suffix: "+", label: "Technologies Used" },
-]
+  {
+    value: 50,
+    suffix: "+",
+    label: "Projects Delivered",
+  },
+  {
+    value: 35,
+    suffix: "+",
+    label: "Happy Clients",
+  },
+  {
+    value: 5,
+    suffix: "+",
+    label: "Years Experience",
+  },
+  {
+    value: 20,
+    suffix: "+",
+    label: "Technologies Used",
+  },
+];
+
+/* -------------------------------------------------------------------------- */
+/*                                  SERVICES                                  */
+/* -------------------------------------------------------------------------- */
 
 export const services = [
   {
     icon: "Globe",
     title: "Web Development",
-    description: "High-performance web applications built with Next.js, React, and modern frameworks. Pixel-perfect, blazing fast, SEO-ready.",
+    description:
+      "High-performance websites and web applications built with Next.js, React, and modern technologies. Fast, responsive, scalable, and SEO-ready.",
     gradient: "from-blue-500/20 to-cyan-500/20",
     accent: "blue",
   },
+
   {
     icon: "Code2",
-    title: "Custom Software",
-    description: "Bespoke software solutions tailored to your unique business workflows. From concept to production-grade systems.",
+    title: "Custom Software Development",
+    description:
+      "Business software tailored to your workflows, requirements, and processes—from internal tools and portals to production-ready applications.",
     gradient: "from-violet-500/20 to-purple-500/20",
     accent: "violet",
   },
+
   {
-    icon: "LayoutDashboard",
-    title: "Dashboard Development",
-    description: "Real-time data dashboards with beautiful visualizations, role-based access, and actionable analytics.",
-    gradient: "from-cyan-500/20 to-teal-500/20",
-    accent: "cyan",
+    icon: "Smartphone",
+    title: "Mobile App Development",
+    description:
+      "Cross-platform and native mobile applications for Android and iOS using modern technologies such as Flutter and React Native.",
+    gradient: "from-fuchsia-500/20 to-pink-500/20",
+    accent: "fuchsia",
   },
+
   {
     icon: "Building2",
     title: "Enterprise Applications",
-    description: "Scalable enterprise-grade systems—ERP, CRM, HRM, and multi-tenant SaaS platforms built to grow with your business.",
+    description:
+      "Scalable business systems including portals, CRM, ERP, HRM, workflow platforms, and multi-user applications designed around your operations.",
     gradient: "from-orange-500/20 to-red-500/20",
     accent: "orange",
   },
+
   {
-    icon: "Palette",
-    title: "UI/UX Design",
-    description: "Human-centered design that converts. From wireframes to polished Figma prototypes—every pixel intentional.",
-    gradient: "from-pink-500/20 to-rose-500/20",
-    accent: "pink",
+    icon: "LayoutDashboard",
+    title: "Dashboard Development",
+    description:
+      "Interactive dashboards with data visualization, role-based access, reporting, filtering, and actionable business insights.",
+    gradient: "from-cyan-500/20 to-teal-500/20",
+    accent: "cyan",
   },
+
   {
     icon: "Zap",
     title: "API Development",
-    description: "Robust, documented REST and GraphQL APIs. Secure, scalable, and built for third-party integrations.",
+    description:
+      "Secure and scalable REST and GraphQL APIs designed for web applications, mobile apps, third-party integrations, and business workflows.",
     gradient: "from-yellow-500/20 to-amber-500/20",
     accent: "yellow",
   },
+
+  {
+    icon: "Palette",
+    title: "UI/UX Design",
+    description:
+      "User-focused interfaces designed from wireframes to polished Figma concepts, with responsive layouts and clear user journeys.",
+    gradient: "from-pink-500/20 to-rose-500/20",
+    accent: "pink",
+  },
+
   {
     icon: "Shield",
     title: "Maintenance & Support",
-    description: "Dedicated post-launch support. Performance monitoring, security patches, feature updates, and 24/7 reliability.",
+    description:
+      "Post-launch maintenance, bug fixes, performance improvements, security updates, feature enhancements, and ongoing technical support.",
     gradient: "from-emerald-500/20 to-green-500/20",
     accent: "emerald",
   },
-  {
-    icon: "Search",
-    title: "SEO Optimization",
-    description: "Technical SEO, Core Web Vitals, structured data, and content strategies that put you on page one.",
-    gradient: "from-indigo-500/20 to-blue-500/20",
-    accent: "indigo",
-  },
-]
+];
+
+/* -------------------------------------------------------------------------- */
+/*                                  PROJECTS                                  */
+/* -------------------------------------------------------------------------- */
 
 export const projects = [
   {
@@ -94,10 +139,13 @@ export const projects = [
     category: "Enterprise Portal",
     tags: ["Portals", "Enterprise Apps"],
     tagline: "Background Verification Management System",
+
     description:
-      "A full-stack enterprise portal for KNK Partners to digitize their entire background verification workflow—vendor onboarding, case management, real-time APIs, and executive reporting.",
+      "A full-stack enterprise portal for KNK Partners to digitize their background verification workflow, including vendor management, case processing, API integrations, reporting, and operational tracking.",
+
     color: "from-blue-600 to-cyan-500",
     bgPattern: "bg-blue-950",
+
     highlights: [
       "Vendor Management",
       "Case Tracking",
@@ -106,43 +154,53 @@ export const projects = [
       "Excel Export",
       "PDF Reports",
     ],
+
     tech: [
       "Next.js",
       "Node.js",
-      "PostgreSQL",
+      "MongoDB",
       "REST APIs",
       "AWS",
       "PDF Generation",
     ],
+
     challenge:
-      "KNK Partners was managing hundreds of verification cases manually via spreadsheets, leading to errors, delays, and poor visibility for clients.",
+      "KNK Partners needed a centralized system to manage verification cases, vendors, status updates, reporting, and client communication more efficiently than spreadsheet-based workflows.",
+
     solution:
-      "Built a multi-tenant portal with role-based access, automated status tracking, real-time API hooks, and one-click report generation in PDF and Excel.",
+      "Built a multi-tenant portal with role-based access, case management, vendor-wise filtering, API-based status tracking, audit logging, and automated PDF and Excel reporting.",
+
     results: [
-      "70% reduction in processing time",
-      "100% audit trail compliance",
+      "Automated case processing workflows",
+      "Centralized audit trail",
       "Real-time client status visibility",
-      "Zero manual data entry errors",
+      "Reduced manual data handling",
     ],
+
     url: "https://knkpartner.com",
   },
 
   {
-    id: "UltraFireTech",
-    title: "UltraFireTech",
+    id: "preventfire",
+    title: "PreventFire",
     category: "Corporate Website",
-    tags: ["Websites"],
+    tags: ["Websites", "SEO"],
+
     tagline: "Fire Safety & Compliance Platform",
+
     description:
-      "A modern, SEO-optimized corporate website for PreventFire that positions them as the authority in fire safety compliance, drives qualified lead generation, and converts visitors to clients.",
+      "A modern corporate website for PreventFire designed to showcase fire safety services, communicate expertise, improve online visibility, and generate qualified business enquiries.",
+
     color: "from-orange-600 to-red-500",
     bgPattern: "bg-orange-950",
+
     highlights: [
       "Corporate Website",
       "Service Showcase",
       "Lead Generation",
       "SEO Optimized",
     ],
+
     tech: [
       "Next.js",
       "Tailwind CSS",
@@ -150,16 +208,20 @@ export const projects = [
       "SEO",
       "Vercel",
     ],
+
     challenge:
-      "PreventFire had no online presence, losing business to competitors discoverable through Google. They needed authority and lead capture.",
+      "PreventFire needed a professional online presence that clearly communicated its fire safety services and made it easier for potential customers to discover and contact the business.",
+
     solution:
-      "Designed a conversion-focused website with structured data, service pages, certifications showcase, and a multi-step quote request form.",
+      "Designed and developed a responsive, conversion-focused website with structured content, service sections, clear calls-to-action, SEO-friendly metadata, and lead capture functionality.",
+
     results: [
-      "First-page Google ranking in 3 months",
-      "85% increase in qualified leads",
-      "45% improvement in conversion rate",
-      "Sub-2s page load time",
+      "SEO-optimized online presence",
+      "Improved service visibility",
+      "Conversion-focused user experience",
+      "Fast and responsive website",
     ],
+
     url: "https://advistadigitalmarketing.in/ultrafiretechlarapp/",
   },
 
@@ -168,32 +230,42 @@ export const projects = [
     title: "TridevPandey.in",
     category: "Personal Brand",
     tags: ["Websites", "Branding"],
+
     tagline: "Personal Brand & Portfolio Website",
+
     description:
-      "A premium personal brand website for Tridev Pandey—establishing authority, showcasing expertise, and building a professional online identity that commands respect.",
+      "A premium personal brand website for Tridev Pandey, designed to establish a strong professional identity, showcase expertise, and create a polished digital presence.",
+
     color: "from-violet-600 to-purple-500",
     bgPattern: "bg-violet-950",
+
     highlights: [
       "Professional Branding",
       "Responsive Design",
       "Fast Performance",
+      "Portfolio Experience",
     ],
+
     tech: [
       "Next.js",
       "Framer Motion",
       "Tailwind CSS",
       "Vercel",
     ],
+
     challenge:
-      "Building a personal brand that stands out in a crowded professional landscape while maintaining authenticity and approachability.",
+      "The project required a professional digital presence that could communicate expertise clearly while maintaining a distinctive and approachable visual identity.",
+
     solution:
-      "Crafted a distinctive visual identity with smooth animations, clear messaging hierarchy, and strategically placed CTAs for speaking and consulting inquiries.",
+      "Crafted a responsive visual identity with smooth animations, clear messaging hierarchy, strong content structure, and strategically placed calls-to-action.",
+
     results: [
-      "3x increase in consulting inquiries",
-      "Featured in industry publications",
-      "98 Google PageSpeed score",
-      "Strong social proof integration",
+      "Professional digital presence",
+      "Responsive user experience",
+      "Fast website performance",
+      "Strong personal branding",
     ],
+
     url: "https://tridevpandey.in/",
   },
 
@@ -201,152 +273,318 @@ export const projects = [
     id: "niceandeasy",
     title: "NiceAndEasyFitness",
     category: "Fitness Business",
-    tags: ["Websites"],
+    tags: ["Websites", "Lead Generation"],
+
     tagline: "Fitness Programs & Lead Capture",
+
     description:
-      "A results-driven fitness business website with program showcases, transformation galleries, and a lead capture system that converts website visitors into paying clients.",
+      "A results-focused fitness business website featuring program showcases, transformation content, responsive layouts, and lead capture functionality.",
+
     color: "from-emerald-600 to-teal-500",
     bgPattern: "bg-emerald-950",
+
     highlights: [
       "Fitness Programs",
       "Lead Capture",
       "Mobile Optimized",
+      "Responsive Design",
     ],
+
     tech: [
       "Next.js",
       "React Hook Form",
       "Tailwind CSS",
       "Vercel",
     ],
+
     challenge:
-      "Fitness businesses lose most potential clients on mobile. NiceAndEasyFitness had high bounce rates and poor lead conversion on small screens.",
+      "The website needed to communicate fitness programs clearly while providing a smooth mobile experience and a simple path for visitors to make enquiries.",
+
     solution:
-      "Mobile-first redesign with thumb-optimized CTAs, fast-loading program cards, social proof integration, and a frictionless inquiry form.",
+      "Created a mobile-first website with program sections, transformation content, social proof, clear calls-to-action, and a frictionless enquiry experience.",
+
     results: [
-      "60% improvement in mobile conversions",
-      "40% reduction in bounce rate",
-      "2x lead generation increase",
-      "99 mobile PageSpeed score",
+      "Mobile-first experience",
+      "Improved lead capture",
+      "Responsive program presentation",
+      "Optimized user journey",
     ],
+
     url: "https://niceandeasyfitness.com/",
   },
-  {
-  id: "preventfire-app",
-  title: "PreventFire Mobile App",
-  category: "Enterprise Mobile App",
-  tags: ["Enterprise Apps"],
-  tagline: "Fire Safety & Emergency Management Application",
-  description:
-    "A cross-platform mobile application built for fire safety management, enabling users to access emergency services, safety resources, and compliance-related features on Android and iOS.",
-  color: "from-zinc-800 via-slate-700 to-stone-500",
-bgPattern: "bg-zinc-950",
-  highlights: [
-    "Android & iOS",
-    "Cross Platform",
-    "Enterprise Solution",
-    "Fire Safety",
-  ],
-  tech: [
-    "React Native",
-    "Android",
-    "iOS",
-    "REST API",
-    "Firebase",
-  ],
-  challenge:
-    "Provide a reliable mobile platform for fire safety services that allows users to quickly access important safety information and emergency-related features.",
-  solution:
-    "Developed a responsive cross-platform mobile application with an intuitive interface, optimized performance, and seamless access to fire safety services across Android and iOS.",
-  results: [
-    "Available on Android & iOS",
-    "Cross-platform deployment",
-    "Optimized mobile experience",
-    "Reliable enterprise solution",
-  ],
-  url: "https://play.google.com/store/apps/details?id=freelance.com.nits.firetech&pcampaignid=web_share",
-},
 
-{
-  id: "jaiib-caiib",
-  title: "JAIIB CAIIB Aspirants",
-  category: "Educational Mobile App",
-  tags: ["Enterprise Apps"],
-  tagline: "Banking Exam Preparation Platform",
-  description:
-    "A mobile learning application designed for banking professionals preparing for JAIIB and CAIIB examinations with study resources, practice modules, and a user-friendly experience.",
-  color: "from-pink-600 via-fuchsia-600 to-violet-500",
-bgPattern: "bg-fuchsia-950",
-  highlights: [
-    "Educational Platform",
-    "Practice Modules",
-    "Mobile Learning",
-    "Android App",
-  ],
-  tech: [
-    "React Native",
-    "Android",
-    "REST API",
-    "Firebase",
-  ],
-  challenge:
-    "Create a simple and accessible learning platform that helps banking professionals prepare efficiently for certification exams from their mobile devices.",
-  solution:
-    "Built a responsive Android application with structured learning content, smooth navigation, and an optimized user experience for exam preparation.",
-  results: [
-    "Mobile-first learning",
-    "Easy content accessibility",
-    "Optimized user experience",
-    "Scalable application architecture",
-  ],
-  url: "https://play.google.com/store/apps/details?id=com.jaiibcaiib.aspirants&pcampaignid=web_share",
-},
-]
+  {
+    id: "preventfire-app",
+    title: "PreventFire Mobile App",
+    category: "Enterprise Mobile App",
+    tags: ["Mobile Apps", "Enterprise"],
+
+    tagline: "Fire Safety & Emergency Management Application",
+
+    description:
+      "A cross-platform mobile application built for fire safety management, enabling users to access emergency services, safety resources, and compliance-related features across Android and iOS.",
+
+    color: "from-zinc-800 via-slate-700 to-stone-500",
+    bgPattern: "bg-zinc-950",
+
+    highlights: [
+      "Android & iOS",
+      "Cross Platform",
+      "Enterprise Solution",
+      "Fire Safety",
+    ],
+
+    tech: [
+      "React Native",
+      "Android",
+      "iOS",
+      "REST API",
+      "Firebase",
+    ],
+
+    challenge:
+      "Provide a reliable mobile platform for fire safety services that allows users to quickly access important safety information and emergency-related features.",
+
+    solution:
+      "Developed a responsive cross-platform mobile application with an intuitive interface, optimized performance, and seamless access to fire safety services across Android and iOS.",
+
+    results: [
+      "Available on Android & iOS",
+      "Cross-platform deployment",
+      "Optimized mobile experience",
+      "Enterprise mobile solution",
+    ],
+
+    url: "https://play.google.com/store/apps/details?id=freelance.com.nits.firetech&pcampaignid=web_share",
+  },
+
+  {
+    id: "jaiib-caiib",
+    title: "JAIIB CAIIB Aspirants",
+    category: "Educational Mobile App",
+    tags: ["Mobile Apps", "Education"],
+
+    tagline: "Banking Exam Preparation Platform",
+
+    description:
+      "A mobile learning application designed for banking professionals preparing for JAIIB and CAIIB examinations with study resources, practice modules, and a user-friendly learning experience.",
+
+    color: "from-pink-600 via-fuchsia-600 to-violet-500",
+    bgPattern: "bg-fuchsia-950",
+
+    highlights: [
+      "Educational Platform",
+      "Practice Modules",
+      "Mobile Learning",
+      "Android App",
+    ],
+
+    tech: [
+      "React Native",
+      "Android",
+      "REST API",
+      "Firebase",
+    ],
+
+    challenge:
+      "Create a simple and accessible learning platform that helps banking professionals prepare efficiently for certification exams from their mobile devices.",
+
+    solution:
+      "Built a responsive Android application with structured learning content, smooth navigation, and an optimized user experience for exam preparation.",
+
+    results: [
+      "Mobile-first learning",
+      "Easy content accessibility",
+      "Optimized user experience",
+      "Scalable application architecture",
+    ],
+
+    url: "https://play.google.com/store/apps/details?id=com.jaiibcaiib.aspirants&pcampaignid=web_share",
+  },
+];
+
+/* -------------------------------------------------------------------------- */
+/*                                 TECH STACK                                 */
+/* -------------------------------------------------------------------------- */
 
 export const techStack = {
- Frontend: [
-  { name: "Next.js", icon: SiNextdotjs },
-  { name: "React", icon: SiReact },
-  { name: "JavaScript", icon: SiJavascript },
-  { name: "Tailwind CSS", icon: SiTailwindcss },
-  { name: "Framer Motion", icon: SiFramer },
-  { name: "Flutter", icon: SiFlutter },
-  { name: "Swift", icon: SiSwift },
-],
-  Backend: [
-    { name: "Node.js", icon: SiNodedotjs },
-    { name: "Express", icon: SiExpress },
-    { name: "Laravel", icon: SiLaravel },
-    { name: "Dart", icon: SiDart },
-    { name: "REST APIs", icon: "🔌" },
-    { name: "GraphQL", icon: SiGraphql },
+  Frontend: [
+    {
+      name: "Next.js",
+      icon: SiNextdotjs,
+    },
+    {
+      name: "React",
+      icon: SiReact,
+    },
+    {
+      name: "JavaScript",
+      icon: SiJavascript,
+    },
+    {
+      name: "Tailwind CSS",
+      icon: SiTailwindcss,
+    },
+    {
+      name: "Framer Motion",
+      icon: SiFramer,
+    },
   ],
- 
-   Database: [
-    { name: "MongoDB", icon: SiMongodb },
-    { name: "PostgreSQL", icon: SiPostgresql },
-    { name: "MySQL", icon: SiMysql },
-    { name: "Supabase", icon: SiSupabase },
-    { name: "Redis", icon: SiRedis },
+
+  Backend: [
+    {
+      name: "Node.js",
+      icon: SiNodedotjs,
+    },
+    {
+      name: "Express",
+      icon: SiExpress,
+    },
+    {
+      name: "Laravel",
+      icon: SiLaravel,
+    },
+    {
+      name: "REST APIs",
+      icon: "🔌",
+    },
+    {
+      name: "GraphQL",
+      icon: SiGraphql,
+    },
+  ],
+
+  Mobile: [
+    {
+      name: "Flutter",
+      icon: SiFlutter,
+    },
+    {
+      name: "Dart",
+      icon: SiDart,
+    },
+    {
+      name: "React Native",
+      icon: SiReact,
+    },
+    {
+      name: "Swift",
+      icon: SiSwift,
+    },
+  ],
+
+  Database: [
+    {
+      name: "MongoDB",
+      icon: SiMongodb,
+    },
+    {
+      name: "PostgreSQL",
+      icon: SiPostgresql,
+    },
+    {
+      name: "MySQL",
+      icon: SiMysql,
+    },
+    {
+      name: "Supabase",
+      icon: SiSupabase,
+    },
+    {
+      name: "Redis",
+      icon: SiRedis,
+    },
   ],
 
   Cloud: [
-    { name: "AWS", icon: FaAws },
-    { name: "Vercel", icon: SiVercel },
-    { name: "Railway", icon: "🚂" },
-    { name: "Render", icon: SiRender },
-    { name: "Docker", icon: SiDocker },
+    {
+      name: "AWS",
+      icon: FaAws,
+    },
+    {
+      name: "Vercel",
+      icon: SiVercel,
+    },
+    {
+      name: "Railway",
+      icon: "🚂",
+    },
+    {
+      name: "Render",
+      icon: SiRender,
+    },
+    {
+      name: "Docker",
+      icon: SiDocker,
+    },
   ],
-}
+};
+
+/* -------------------------------------------------------------------------- */
+/*                                   PROCESS                                  */
+/* -------------------------------------------------------------------------- */
 
 export const process = [
-  { step: "01", title: "Discover", description: "We deep-dive into your business goals, target users, and competitive landscape to uncover what will actually move the needle.", icon: "Search" },
-  { step: "02", title: "Plan", description: "Technical architecture, sprint roadmap, resource allocation, and risk mitigation—all mapped before a single line of code is written.", icon: "ClipboardList" },
-  { step: "03", title: "Design", description: "Figma wireframes to high-fidelity prototypes. We validate every screen with stakeholders before handoff to development.", icon: "Palette" },
-  { step: "04", title: "Develop", description: "Agile development in 2-week sprints. Clean code, peer-reviewed PRs, and continuous deployment with full transparency.", icon: "Code2" },
-  { step: "05", title: "Test", description: "Automated testing, QA sprints, performance audits, and cross-browser compatibility before anything ships to production.", icon: "TestTube" },
-  { step: "06", title: "Launch", description: "Zero-downtime deployments, DNS migrations, monitoring setup, and stakeholder walkthroughs. Your launch day, flawlessly executed.", icon: "Rocket" },
-  { step: "07", title: "Support", description: "Ongoing SLA-backed support, proactive monitoring, feature enhancements, and a team that stays invested in your growth.", icon: "LifeBuoy" },
-]
+  {
+    step: "01",
+    title: "Discover",
+    description:
+      "We understand your business goals, target users, requirements, and challenges before defining the right solution.",
+    icon: "Search",
+  },
+
+  {
+    step: "02",
+    title: "Plan",
+    description:
+      "We define the technical approach, project scope, milestones, architecture, and delivery roadmap before development begins.",
+    icon: "ClipboardList",
+  },
+
+  {
+    step: "03",
+    title: "Design",
+    description:
+      "We create wireframes and high-fidelity UI designs focused on usability, responsive layouts, and clear user journeys.",
+    icon: "Palette",
+  },
+
+  {
+    step: "04",
+    title: "Develop",
+    description:
+      "We build the product using modern technologies, reusable components, clean code, API integrations, and scalable architecture.",
+    icon: "Code2",
+  },
+
+  {
+    step: "05",
+    title: "Test",
+    description:
+      "We test functionality, responsiveness, performance, integrations, and browser compatibility before production release.",
+    icon: "TestTube",
+  },
+
+  {
+    step: "06",
+    title: "Launch",
+    description:
+      "We handle production deployment, environment configuration, domain setup, and the final handover required to get your product live.",
+    icon: "Rocket",
+  },
+
+  {
+    step: "07",
+    title: "Support",
+    description:
+      "After launch, we provide ongoing maintenance, bug fixes, performance improvements, and feature enhancements as your needs evolve.",
+    icon: "LifeBuoy",
+  },
+];
+
+/* -------------------------------------------------------------------------- */
+/*                                TESTIMONIALS                                */
+/* -------------------------------------------------------------------------- */
 
 export const testimonials = [
   {
@@ -355,70 +593,119 @@ export const testimonials = [
     company: "KNK Partners",
     avatar: "RM",
     rating: 5,
-    text: "Aptechnosys transformed our manual verification process into a fully automated system. The team understood our complex requirements and delivered beyond expectations. Truly a premium development partner.",
+    text:
+      "Aptechnosys transformed our manual verification process into a fully automated system. The team understood our complex requirements and delivered beyond expectations. Truly a premium development partner.",
     gradient: "from-blue-500 to-cyan-500",
   },
+
   {
     name: "Vikram Singh",
     role: "Director",
     company: "PreventFire",
     avatar: "VS",
     rating: 5,
-    text: "Our website now ranks on the first page of Google and our lead generation has increased dramatically. Aptechnosys delivered a site that actually converts visitors into clients.",
+    text:
+      "Our website now provides a much stronger online presence and makes it easier for customers to discover our services and get in touch with us.",
     gradient: "from-orange-500 to-red-500",
   },
+
   {
     name: "Priya Sharma",
     role: "Founder",
     company: "NiceAndEasyFitness",
     avatar: "PS",
     rating: 5,
-    text: "The mobile experience they built is incredible. Our inquiry rate doubled in the first month after launch. They genuinely care about the business outcomes, not just the code.",
+    text:
+      "The mobile experience they built is incredible. The website provides a much smoother experience for visitors and makes it easier for potential customers to enquire.",
     gradient: "from-emerald-500 to-teal-500",
   },
-  {
-    name: "Arjun Patel",
-    role: "CTO",
-    company: "TechStartup",
-    avatar: "AP",
-    rating: 5,
-    text: "Working with Aptechnosys felt like having a senior engineering team in-house. Their technical depth, communication, and delivery quality set a new standard for what I expect from agencies.",
-    gradient: "from-violet-500 to-purple-500",
-  },
-]
+];
+
+/* -------------------------------------------------------------------------- */
+/*                                    FAQ                                     */
+/* -------------------------------------------------------------------------- */
 
 export const faqs = [
   {
     q: "How long does development typically take?",
-    a: "Project timelines vary by scope. A marketing website typically takes 2–4 weeks; a custom web application 6–16 weeks; an enterprise system 3–6 months. After our discovery call, we provide a detailed timeline and milestone plan.",
+    a:
+      "Project timelines vary by scope. A marketing website typically takes 2–4 weeks, a custom web application 6–16 weeks, and larger enterprise systems can take several months. After understanding your requirements, we provide a detailed timeline and milestone plan.",
   },
+
   {
     q: "What technologies do you use?",
-    a: "Our primary stack is Next.js, React, Node.js, and PostgreSQL or MongoDB. We also work with TypeScript, GraphQL, AWS, Vercel, and Docker. We select the best technology for each project's specific requirements—not just what's trendy.",
+    a:
+      "Our primary technologies include Next.js, React, Node.js, Express, MongoDB, PostgreSQL, Flutter, React Native, REST APIs, GraphQL, AWS, Vercel, Docker, and other modern tools. We select technologies based on the specific requirements of each project.",
   },
+
   {
     q: "Do you provide ongoing support after launch?",
-    a: "Yes. We offer monthly retainer packages that include performance monitoring, security updates, feature additions, and priority bug fixes. Most clients maintain a support relationship with us well beyond launch.",
+    a:
+      "Yes. We provide ongoing maintenance and support including bug fixes, performance improvements, security updates, feature enhancements, and technical assistance after launch.",
   },
+
   {
     q: "Can you redesign our existing website?",
-    a: "Absolutely. We conduct a full audit of your current site—performance, SEO, conversion rates, and UX—before designing a new version that addresses every identified issue. We handle full migrations with zero downtime.",
+    a:
+      "Absolutely. We can review your existing website's design, performance, SEO, UX, content structure, and conversion flow before creating a modern redesigned experience.",
   },
+
   {
     q: "Do you build custom business software?",
-    a: "Yes, this is one of our core specialties. CRMs, ERPs, HR systems, inventory management, verification portals, booking systems—we build software designed around your exact business logic, not generic SaaS templates.",
+    a:
+      "Yes. We build custom business software such as CRMs, ERPs, HR systems, inventory platforms, verification portals, booking systems, dashboards, APIs, and workflow management systems based on your business requirements.",
   },
+
   {
     q: "What is your pricing model?",
-    a: "We work on fixed-price contracts for well-defined projects and time-and-materials for evolving scopes. After understanding your requirements in a discovery call, we provide a detailed proposal with transparent line-item pricing.",
+    a:
+      "We work with different pricing models depending on project scope. Fixed-price contracts are suitable for clearly defined projects, while evolving projects can be handled through milestone-based or time-and-materials models. After understanding your requirements, we provide a detailed proposal.",
   },
-]
+];
+
+
+/*  TRUST FEATURES   */
 
 export const trustFeatures = [
-  { icon: "Cpu", title: "Custom-Built, Always", description: "Every solution is architected from scratch for your specific business. No templates, no shortcuts." },
-  { icon: "Zap", title: "Fast Delivery", description: "Agile sprints with weekly demos. Most projects ship in half the time competitors quote." },
-  { icon: "Layers", title: "Scalable Architecture", description: "Systems designed for your next 10x. Modular codebases that grow without rewrites." },
-  { icon: "Search", title: "SEO-First Approach", description: "Every project ships with structured data, Core Web Vitals optimization, and technical SEO built in." },
-  { icon: "HeadphonesIcon", title: "Dedicated Support", description: "A real team that knows your project. Not ticket queues—direct Slack and WhatsApp access." },
-  { icon: "Star", title: "Modern Stack", description: "Next.js, Node, PostgreSQL, AWS. Battle-tested technologies trusted by top-tier companies worldwide." },
-]
+  {
+    icon: "Cpu",
+    title: "Built Around Your Needs",
+    description:
+      "We tailor each solution around your business requirements, workflows, users, and technical constraints.",
+  },
+
+  {
+    icon: "Zap",
+    title: "Efficient Delivery",
+    description:
+      "Clear milestones, regular communication, and focused development help keep projects moving from planning through launch.",
+  },
+
+  {
+    icon: "Layers",
+    title: "Scalable Architecture",
+    description:
+      "We design modular systems that can evolve with your business and support future features and integrations.",
+  },
+
+  {
+    icon: "Search",
+    title: "SEO-Friendly Development",
+    description:
+      "We consider technical SEO, performance, structured metadata, responsive design, and Core Web Vitals during development.",
+  },
+
+  {
+    icon: "HeadphonesIcon",
+    title: "Dedicated Support",
+    description:
+      "We remain available after launch for maintenance, troubleshooting, improvements, and future development needs.",
+  },
+
+  {
+    icon: "Star",
+    title: "Modern Technology",
+    description:
+      "We work with modern technologies such as Next.js, React, Node.js, MongoDB, PostgreSQL, Flutter, AWS, Vercel, and Docker.",
+  },
+];
