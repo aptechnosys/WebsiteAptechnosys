@@ -15,14 +15,14 @@ import {
 import { services } from "@/data/site"
 
 export const metadata = {
-  title: "Software Development Services | Aptechnosys",
+  title: "Software Development Services",
   description:
     "Explore Aptechnosys software development services including web development, custom software, mobile apps, enterprise applications, dashboards, APIs, UI/UX design, and ongoing support.",
   alternates: {
     canonical: "/services",
   },
   openGraph: {
-    title: "Software Development Services | Aptechnosys",
+    title: "Software Development Services",
     description:
       "Web, mobile, custom software, APIs, dashboards, UI/UX, enterprise applications, and ongoing support.",
     url: "/services",
