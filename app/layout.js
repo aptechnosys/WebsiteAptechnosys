@@ -5,7 +5,11 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 export const metadata = {
-  metadataBase: new URL("https://www.aptechnosys.com"),
+  metadataBase: new URL("https://aptechnosys.com"),
+
+  alternates: {
+    canonical: "/",
+  },
 
   title: {
     default: "Aptechnosys | Custom Software Development & Web Development Company",
@@ -40,7 +44,7 @@ export const metadata = {
   authors: [
     {
       name: "Aptechnosys",
-      url: "https://www.aptechnosys.com",
+      url: "https://aptechnosys.com",
     },
   ],
 
@@ -50,7 +54,7 @@ export const metadata = {
   openGraph: {
     type: "website",
     locale: "en_IN",
-    url: "https://www.aptechnosys.com",
+    url: "https://aptechnosys.com",
     siteName: "Aptechnosys",
 
     title: "Aptechnosys | Custom Software Development & Web Development Company",
@@ -106,18 +110,18 @@ const jsonLd = {
     {
       "@type": "Organization",
 
-      "@id": "https://www.aptechnosys.com/#organization",
+      "@id": "https://aptechnosys.com/#organization",
 
       name: "Aptechnosys",
 
-      url: "https://www.aptechnosys.com",
+      url: "https://aptechnosys.com",
 
       description:
         "Custom software development and digital solutions company.",
 
       logo: {
         "@type": "ImageObject",
-        url: "https://www.aptechnosys.com/logo.jpg",
+        url: "https://aptechnosys.com/logo.jpg",
       },
 
       sameAs: [
@@ -134,14 +138,14 @@ const jsonLd = {
     {
       "@type": "WebSite",
 
-      "@id": "https://www.aptechnosys.com/#website",
+      "@id": "https://aptechnosys.com/#website",
 
-      url: "https://www.aptechnosys.com",
+      url: "https://aptechnosys.com",
 
       name: "Aptechnosys",
 
       publisher: {
-        "@id": "https://www.aptechnosys.com/#organization",
+        "@id": "https://aptechnosys.com/#organization",
       },
 
       inLanguage: "en-IN",

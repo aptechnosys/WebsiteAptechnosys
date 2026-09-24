@@ -1,6 +1,13 @@
-"use client";
 
 import { jobs } from "@/data/jobs";
+export const metadata = {
+  title: "Careers",
+  description:
+    "Explore career opportunities at APTechnosys and join our team building web applications, mobile apps, software solutions and digital products.",
+  alternates: {
+    canonical: "/careers",
+  },
+};
 import {
   Briefcase,
   MapPin,

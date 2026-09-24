@@ -86,14 +86,14 @@ export async function generateMetadata({ params }) {
   }
 
   return {
-    title: `${service.title} Services | Aptechnosys`,
+    title: `${service.title} Services`,
     description:
       service.heroDescription || service.description,
     alternates: {
       canonical: `/services/${slug}`,
     },
     openGraph: {
-      title: `${service.title} Services | Aptechnosys`,
+      title: `${service.title} Services`,
       description:
         service.heroDescription || service.description,
       url: `/services/${slug}`,

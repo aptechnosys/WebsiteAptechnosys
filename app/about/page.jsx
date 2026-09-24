@@ -3,9 +3,12 @@ import Image from "next/image"
 import { aboutData } from "../../data/about"
 
 export const metadata = {
-  title: "About APTechnosys | Software & Digital Solutions Company",
+  title: "About APTechnosys",
   description:
     "Learn about APTechnosys, our journey, founder, team and approach to building software, mobile applications, enterprise solutions and digital products.",
+  alternates: {
+    canonical: "/about",
+  },
 }
 
 export default function AboutPage() {
