@@ -7,7 +7,7 @@ export const metadata = {
 export default function TermsOfServicePage() {
   return (
     <main className="min-h-screen bg-white dark:bg-[#09090b] text-zinc-900 dark:text-white">
-      <div className="container-custom py-20 sm:py-24">
+      <div className="container-custom !pt-[180px] pb-18 sm:!pt-[190px] sm:pb-22">
         <div className="max-w-4xl mx-auto">
 
           {/* Header */}
