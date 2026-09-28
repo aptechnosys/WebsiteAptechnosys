@@ -12,7 +12,8 @@ export const metadata = {
   },
 
   title: {
-    default: "Aptechnosys | Custom Software Development & Web Development Company",
+    default:
+      "Aptechnosys | Custom Software Development & Web Development Company",
     template: "%s | Aptechnosys",
   },
 
@@ -51,13 +52,21 @@ export const metadata = {
   creator: "Aptechnosys",
   publisher: "Aptechnosys",
 
+  // Favicon
+  icons: {
+    icon: "/logo.jpg",
+    shortcut: "/logo.jpg",
+    apple: "/logo.jpg",
+  },
+
   openGraph: {
     type: "website",
     locale: "en_IN",
     url: "https://aptechnosys.com",
     siteName: "Aptechnosys",
 
-    title: "Aptechnosys | Custom Software Development & Web Development Company",
+    title:
+      "Aptechnosys | Custom Software Development & Web Development Company",
 
     description:
       "Custom software Development, web applications, mobile apps, enterprise solutions, dashboards, and digital services by Aptechnosys.",
@@ -75,7 +84,8 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
 
-    title: "Aptechnosys | Custom Software Development & Web Development",
+    title:
+      "Aptechnosys | Custom Software Development & Web Development",
 
     description:
       "Custom software Development, web applications, mobile apps, enterprise solutions, and digital products.",
@@ -121,12 +131,10 @@ const jsonLd = {
 
       logo: {
         "@type": "ImageObject",
-        url: "https://aptechnosys.com/logo.jpg",
+        url: "https://aptechnosys.com/logo.png",
       },
 
-      sameAs: [
-        "https://github.com/aptechnosys",
-      ],
+      sameAs: ["https://github.com/aptechnosys"],
 
       /*
        * Keep foundingDate only if this has been
@@ -188,6 +196,8 @@ export default function RootLayout({ children }) {
           rel="stylesheet"
         />
 
+        {/* Browser Theme Color */}
+
         <meta
           name="theme-color"
           content="#09090b"
@@ -202,7 +212,6 @@ export default function RootLayout({ children }) {
         suppressHydrationWarning
       >
         <ThemeProvider>
-
           {/* Global Navigation */}
           <Navbar />
 
@@ -214,7 +223,6 @@ export default function RootLayout({ children }) {
 
           {/* Floating WhatsApp */}
           <FloatingWhatsapp />
-
         </ThemeProvider>
       </body>
     </html>
