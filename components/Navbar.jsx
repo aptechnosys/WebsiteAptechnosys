@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { Menu, X } from "lucide-react"
+import { Menu, X, Download } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import ThemeToggle from "@/components/ThemeToggle"
 import Link from "next/link"
@@ -13,7 +13,6 @@ const navLinks = [
   { label: "Process", href: "/#process" },
   { label: "About Us", href: "/about" },
   { label: "Careers", href: "/careers" },
-  { label: "FAQ", href: "/#faq" },
 ]
 
 // Small SVG icon for the "View Work" button
@@ -107,6 +106,21 @@ export default function Navbar() {
                   </Link>
                 </Button>
 
+                {/* Download Portfolio */}
+                <Button
+                  variant="outline"
+                  className="border-zinc-900/10 dark:border-white/10"
+                  asChild
+                >
+                  <a
+                    href="/APTechnosys.pdf"
+                    download
+                  >
+                    <Download className="w-4 h-4 mr-2" />
+                    Brochure
+                  </a>
+                </Button>
+
                 <Button
                   className="bg-blue-600 hover:bg-blue-700 text-white"
                   asChild
@@ -155,6 +169,23 @@ export default function Navbar() {
           </div>
 
           <div className="flex flex-col gap-3">
+
+            {/* Mobile Download Portfolio */}
+            <Button
+              variant="outline"
+              className="w-full"
+              asChild
+            >
+              <a
+                href="/Faiyaz-Khan-Portfolio.pdf"
+                download
+                onClick={() => setMobileOpen(false)}
+              >
+                <Download className="w-4 h-4 mr-2" />
+                Download Portfolio
+              </a>
+            </Button>
+
             <Button
               variant="outline"
               className="w-full"
@@ -181,6 +212,7 @@ export default function Navbar() {
                 <ArrowRightIcon />
               </Link>
             </Button>
+
           </div>
         </div>
       )}
