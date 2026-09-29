@@ -60,7 +60,6 @@ export default function Footer() {
               </p>
             </div>
 
-            {/* Internal route */}
             <Link
               href="/#contact"
               className="inline-flex items-center justify-center gap-2 self-center md:self-auto flex-shrink-0 bg-blue-600 hover:bg-blue-700 text-white px-6 sm:px-8 py-3.5 sm:py-4 rounded-xl font-semibold text-sm sm:text-base transition-colors shadow-xl shadow-blue-500/30"
@@ -76,16 +75,15 @@ export default function Footer() {
       {/* Footer Content */}
       <div className="container-custom pb-12">
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 sm:gap-10 mb-12">
+        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-5 gap-8 sm:gap-10 mb-12">
 
           {/* Brand */}
-          <div className="sm:col-span-2 lg:col-span-2 mt-[31px]">
+          <div className="col-span-2 lg:col-span-2 mt-[31px]">
 
             <Link
               href="/"
               className="flex items-center gap-2.5 mb-5 justify-center sm:justify-start"
             >
-
               <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-600 to-violet-600 flex items-center justify-center">
                 <Code2 className="w-4 h-4 text-white" />
               </div>
@@ -93,10 +91,9 @@ export default function Footer() {
               <span className="text-zinc-900 dark:text-white font-semibold text-lg">
                 Aptechnosys
               </span>
-
             </Link>
 
-            <p className="text-zinc-500 text-sm leading-relaxed max-w-xs mb-6 mx-auto sm:mx-0 text-center sm:text-left">
+            <p className="text-zinc-500 dark:text-zinc-400 text-sm leading-relaxed max-w-xs mb-6 mx-auto sm:mx-0 text-center sm:text-left">
               Premium software development for startups and businesses ready
               to compete at the highest level.
             </p>
@@ -148,47 +145,88 @@ export default function Footer() {
 
           </div>
 
-          {/* Footer Link Columns */}
-          {Object.entries(footerLinks).map(([category, links]) => (
-            <div
-              key={category}
-              className="text-center sm:text-left mt-0 sm:mt-[31px]"
-            >
+          {/* Services */}
+          <div className="text-center sm:text-left mt-0 sm:mt-[31px]">
 
-              <h4 className="text-zinc-900 dark:text-white text-xs font-semibold uppercase tracking-widest mb-4">
-                {category}
-              </h4>
+            <h4 className="text-zinc-900 dark:text-white text-xs font-semibold uppercase tracking-widest mb-4">
+              Services
+            </h4>
 
-              <ul className="space-y-3">
+            <ul className="space-y-3">
 
-                {links.map((link) => (
-                  <li key={link.label}>
+              {footerLinks.Services.map((link) => (
+                <li key={link.label}>
+                  <Link
+                    href={link.href}
+                    className="text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-200 text-sm transition-colors"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
 
-                    <Link
-                      href={link.href}
-                      className="text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-200 text-sm transition-colors"
-                    >
-                      {link.label}
-                    </Link>
+            </ul>
 
-                  </li>
-                ))}
+          </div>
 
-              </ul>
+          {/* Company */}
+          <div className="text-center sm:text-left mt-0 sm:mt-[31px]">
 
-            </div>
-          ))}
+            <h4 className="text-zinc-900 dark:text-white text-xs font-semibold uppercase tracking-widest mb-4">
+              Company
+            </h4>
+
+            <ul className="space-y-3">
+
+              {footerLinks.Company.map((link) => (
+                <li key={link.label}>
+                  <Link
+                    href={link.href}
+                    className="text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-200 text-sm transition-colors"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+
+            </ul>
+
+          </div>
+
+          {/* Resources */}
+          <div className="col-span-2 lg:col-span-1 text-center sm:text-left mt-0 sm:mt-[31px]">
+
+            <h4 className="text-zinc-900 dark:text-white text-xs font-semibold uppercase tracking-widest mb-4">
+              Resources
+            </h4>
+
+            <ul className="grid grid-cols-2 sm:grid-cols-1 gap-x-5 gap-y-3">
+
+              {footerLinks.Resources.map((link) => (
+                <li key={link.label}>
+                  <Link
+                    href={link.href}
+                    className="text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-200 text-sm transition-colors"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+
+            </ul>
+
+          </div>
 
         </div>
 
         {/* Copyright */}
         <div className="border-t border-zinc-900/[0.06] dark:border-white/[0.06] pt-8 flex flex-col md:flex-row items-center justify-between gap-3 text-center md:text-left">
 
-          <p className="text-zinc-600 text-sm">
+          <p className="text-zinc-600 dark:text-zinc-400 text-sm">
             © {new Date().getFullYear()} Aptechnosys. All rights reserved.
           </p>
 
-         <p className="text-zinc-600 dark:text-zinc-400 text-sm">
+          <p className="text-zinc-600 dark:text-zinc-400 text-sm">
             Built with ❤️ Next.js
           </p>
 
