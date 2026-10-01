@@ -11,35 +11,19 @@ const nextConfig = {
 
   async redirects() {
     return [
-      // 1. Root / home
+      // 1. Root / home cleanup
       {
         source: "/home",
         destination: "/",
         permanent: true,
       },
-      // 2. Redirect /privacy to the real working /privacy-policy page
+      // 2. Redirect /privacy to the real /privacy-policy page
       {
         source: "/privacy",
         destination: "/privacy-policy",
         permanent: true,
       },
-      // 3. Homepage section anchors
-      {
-        source: "/about",
-        destination: "/#about",
-        permanent: true,
-      },
-      {
-        source: "/services",
-        destination: "/#services",
-        permanent: true,
-      },
-      {
-        source: "/projects",
-        destination: "/#projects",
-        permanent: true,
-      },
-      // 4. Old builder API cleanup
+      // 3. Old builder API cleanup
       {
         source: "/_api/:path*",
         destination: "/",
