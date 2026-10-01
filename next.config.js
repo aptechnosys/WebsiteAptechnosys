@@ -4,6 +4,7 @@ const nextConfig = {
 
   images: {
     formats: ["image/avif", "image/webp"],
+    remotePatterns: [],
   },
 
   compress: true,
@@ -11,19 +12,16 @@ const nextConfig = {
 
   async redirects() {
     return [
-      // 1. Root / home cleanup
       {
         source: "/home",
         destination: "/",
         permanent: true,
       },
-      // 2. Redirect /privacy to the real /privacy-policy page
       {
         source: "/privacy",
         destination: "/privacy-policy",
         permanent: true,
       },
-      // 3. Old builder API cleanup
       {
         source: "/_api/:path*",
         destination: "/",
@@ -31,6 +29,6 @@ const nextConfig = {
       },
     ];
   },
-};
+}
 
-module.exports = nextConfig;
+module.exports = nextConfig
