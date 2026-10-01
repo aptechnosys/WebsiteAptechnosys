@@ -11,14 +11,19 @@ const nextConfig = {
 
   async redirects() {
     return [
-      // 1. Root and legacy home route
+      // 1. Root / home
       {
         source: "/home",
         destination: "/",
         permanent: true,
       },
-      // 2. Sections/pages flagged in Search Console
-      // (Change '/#section' to dedicated routes like '/services' if you create standalone pages for them)
+      // 2. Redirect /privacy to the real working /privacy-policy page
+      {
+        source: "/privacy",
+        destination: "/privacy-policy",
+        permanent: true,
+      },
+      // 3. Homepage section anchors
       {
         source: "/about",
         destination: "/#about",
@@ -34,13 +39,7 @@ const nextConfig = {
         destination: "/#projects",
         permanent: true,
       },
-      // 3. Privacy Policy (redirect to your active route, e.g., '/privacy' or '/')
-      {
-        source: "/privacy-policy",
-        destination: "/privacy",
-        permanent: true,
-      },
-      // 4. Legacy site-builder / Wix API queries
+      // 4. Old builder API cleanup
       {
         source: "/_api/:path*",
         destination: "/",
