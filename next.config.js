@@ -12,7 +12,11 @@ const nextConfig = {
   async redirects() {
     return [
       // 1. Root / home
-     
+      {
+        source: "/home",
+        destination: "/",
+        permanent: true,
+      },
       // 2. Redirect /privacy to the real working /privacy-policy page
       {
         source: "/privacy",
